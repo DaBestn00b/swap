@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 223274970148c5242bd166c8cb677ad0
+timeCreated: 1498022650
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - blueTilePrefab: {fileID: 1649639820753314, guid: ec2b132516744e3429964e76200efb66,
+      type: 2}
+  - currentTile: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
