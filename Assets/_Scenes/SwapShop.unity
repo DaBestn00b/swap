@@ -1970,6 +1970,7 @@ MonoBehaviour:
   SpectreSelected: {fileID: 0}
   FadeSelected: {fileID: 0}
   LightSelected: {fileID: 0}
+  TobuPlayTxt: {fileID: 695309588}
   PlayRootsSouce: {fileID: 155401694}
   PlaySpectreSource: {fileID: 1343318085}
   PlayFadeSource: {fileID: 247796331}

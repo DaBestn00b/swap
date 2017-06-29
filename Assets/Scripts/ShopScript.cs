@@ -16,6 +16,7 @@ public class ShopScript : MonoBehaviour
     public Text SpectreSelected;
     public Text FadeSelected;
     public Text LightSelected;
+    public Text TobuPlayTxt;
     public AudioSource PlayRootsSouce;
     public AudioSource PlaySpectreSource;
     public AudioSource PlayFadeSource;
@@ -25,6 +26,7 @@ public class ShopScript : MonoBehaviour
     private float WalkerSpectreEnabled;
     private float WalkerFadeEnabled;
     private float ElectroLightEnabled;
+    private int TobuPlaySwitch;
 
     void Start()
     {
@@ -100,8 +102,18 @@ public class ShopScript : MonoBehaviour
 
     public void PlayRoots()
     {
-        StopAllMusic();
-        PlayRootsSouce.Play();
+        if (TobuPlaySwitch == 0)
+        {
+            TobuPlaySwitch = 1;
+            StopAllMusic();
+            PlayRootsSouce.Play();
+            TobuPlayTxt.text = "Stop";
+        }else
+        {
+            TobuPlaySwitch = 0;
+            PlayRootsSouce.Pause();
+            TobuPlayTxt.text = "Play";
+        }
     }
 
     public void StopAllMusic()
