@@ -10,6 +10,9 @@ Your score raises depending on how long you survive. The speed of your player al
 - Beautiful graphics and fonts
 - Great animations
 
+# Links
+[![Get it on Google Play](https://goo.gl/edfBSC)](https://goo.gl/uCTdch)
+
 # Tips
 - Landscape mode is recommended
 
