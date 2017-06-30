@@ -1,7 +1,9 @@
 Swap is an endless runner that generates tiles which are either blue or red.
 
-# How to play
-You move automatically, but you have to swap colors to match the color of the floor. Your score raises depending on how long you survive. The speed of your player also increases over time. Try to last as long as possible in the color changing world.
+# Objective
+The goal of the game is to travel the farthest you can without losing. A ball rolls on a platform automatically. You lose when the ball is the opposite color as the ground. To change the color to the right color, you must click the "Swap!" button.
+
+Your score raises depending on how long you survive. The speed of your player also increases over time. Try to last as long as possible in the color changing world.
 
 # Features
 - Endless fun
