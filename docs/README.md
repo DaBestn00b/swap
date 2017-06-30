@@ -12,7 +12,7 @@ Your score raises depending on how long you survive. The speed of your player al
 
 # Links
 [![Get it on Google Play](https://goo.gl/edfBSC)](https://goo.gl/uCTdch)
-[![Get it on the Amazon App Store](img/amazon.svg)](https://goo.gl/oBAWGV)
+[![Get it on the Amazon App Store](http://www.ebaad.ml/swap/img/amazon.svg)](https://goo.gl/oBAWGV)
 
 # Tips
 - Landscape mode is recommended
