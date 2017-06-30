@@ -9,16 +9,21 @@ Your score raises depending on how long you survive. The speed of your player al
 - Endless fun
 - Beautiful graphics and fonts
 - Great animations
+- Keeps track of highscores and points
+- Cross platform (Android, Amazon, and more to come)
+- No internet required
+- A soon to come store for buying items and upgrades
+- Still being updated currently
 
 # Links
 [![Get it on Google Play](http://www.ebaad.ml/swap/img/android.svg)](https://goo.gl/uCTdch)
 [![Get it on the Amazon App Store](http://www.ebaad.ml/swap/img/amazon.svg)](https://goo.gl/oBAWGV)
 
-# Tips
-- Landscape mode is recommended
-
 # About
 App made by [Ebaad Imran](http://ebaad.ml). Marketing by [Cameron Samuels](http://cameronsamuels.com).
+
+### Tips
+- Landscape mode is recommended
 
 ### Feedback
 If you want to help out, submit issues or suggestions at [https://git.io/vQ8Vt](https://git.io/vQ8Vt). I will gladly appreciate it.
