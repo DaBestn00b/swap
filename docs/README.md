@@ -15,7 +15,7 @@ You move automatically, but you have to swap colors to match the color of the fl
 App made by [Ebaad Imran](http://ebaad.ml). Marketing by [Cameron Samuels](http://cameronsamuels.com).
 
 ### Feedback
-Submit issues or suggestions at [https://git.io/vQ8Vt](https://git.io/vQ8Vt). I will gladly appreciate it.
+If you want to help out, submit issues or suggestions at [https://git.io/vQ8Vt](https://git.io/vQ8Vt). I will gladly appreciate it.
 
 ### Contributing
-Also, if you are a programmer, fork my repo at [https://git.io/vQRGX](https://git.io/vQRGX). I will love for PR's (pull requests).
+Also, if you are a programmer, you may fork my repo at [https://git.io/vQRGX](https://git.io/vQRGX). I will love for PR's (pull requests).
