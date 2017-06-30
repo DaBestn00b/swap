@@ -5,6 +5,10 @@ The goal of the game is to travel the farthest you can without losing. A ball ro
 
 Your score raises depending on how long you survive. The speed of your player also increases over time. Try to last as long as possible in the color changing world.
 
+# Links
+[![Get it on Google Play](http://www.ebaad.ml/swap/img/android.svg)](https://goo.gl/uCTdch)
+[![Get it on the Amazon App Store](http://www.ebaad.ml/swap/img/amazon.svg)](https://goo.gl/oBAWGV)
+
 # Features
 - Endless fun
 - Beautiful graphics and fonts
@@ -14,10 +18,6 @@ Your score raises depending on how long you survive. The speed of your player al
 - No internet required
 - A soon to come store for buying items and upgrades
 - Still being updated currently
-
-# Links
-[![Get it on Google Play](http://www.ebaad.ml/swap/img/android.svg)](https://goo.gl/uCTdch)
-[![Get it on the Amazon App Store](http://www.ebaad.ml/swap/img/amazon.svg)](https://goo.gl/oBAWGV)
 
 # About
 App made by [Ebaad Imran](http://ebaad.ml). Marketing by [Cameron Samuels](http://cameronsamuels.com).
