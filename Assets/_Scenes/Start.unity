@@ -299,7 +299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75, y: -100}
+  m_AnchoredPosition: {x: -100, y: -110}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &418873692
@@ -375,7 +375,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a08858f9da325f548be9100688161be9, type: 3}
-    m_FontSize: 25
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -650,7 +650,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: -100}
+  m_AnchoredPosition: {x: 100, y: -110}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1147688141
@@ -726,7 +726,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a08858f9da325f548be9100688161be9, type: 3}
-    m_FontSize: 25
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -984,8 +984,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 300, y: 200}
+  m_AnchoredPosition: {x: 0, y: 45}
+  m_SizeDelta: {x: 470, y: 116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1370767226
 MonoBehaviour:
@@ -1008,18 +1008,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: a08858f9da325f548be9100688161be9, type: 3}
-    m_FontSize: 27
+    m_FontSize: 37
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 45
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Are you sure you want to quit?
+  m_Text: "Are you sure \nyou want to quit?"
 --- !u!222 &1370767227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1437,7 +1437,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 300, y: 150}
+  m_SizeDelta: {x: 400, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895571818
 MonoBehaviour:
