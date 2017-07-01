@@ -16,17 +16,21 @@ public class ShopScript : MonoBehaviour
     public Text SpectreSelected;
     public Text FadeSelected;
     public Text LightSelected;
+    public Text HasFadeTxt;
     public Text TobuPlayTxt;
+    public Text FadePlayTxt;
     public AudioSource PlayRootsSouce;
     public AudioSource PlaySpectreSource;
     public AudioSource PlayFadeSource;
     public AudioSource PlayLightSource;
     public float totalScore;
+    private float hasFade;
     private float TobuRootsEnabled;
     private float WalkerSpectreEnabled;
     private float WalkerFadeEnabled;
     private float ElectroLightEnabled;
     private int TobuPlaySwitch;
+    private int FadePlaySwitch;
 
     void Start()
     {
@@ -39,6 +43,10 @@ public class ShopScript : MonoBehaviour
         ColorShop.enabled = false;
         totalScore = PlayerPrefs.GetFloat("TotalScore");
         SetMusicToSave();
+        if(hasFade == 1)
+        {
+            HasFadeTxt.text = "Select";
+        }
         if(WalkerSpectreEnabled == 0 && WalkerFadeEnabled == 0 && ElectroLightEnabled == 0)
         {
             SelectTobu();
@@ -58,7 +66,8 @@ public class ShopScript : MonoBehaviour
 
     void Update()
     {
-
+        SetMusicSaves();
+        UpdateText();
     }
 
     public void UpdateText()
@@ -68,7 +77,6 @@ public class ShopScript : MonoBehaviour
 
     public void Back()
     {
-        SetMusicSaves();
         SceneManager.LoadScene("Start");
     }
 
@@ -107,12 +115,33 @@ public class ShopScript : MonoBehaviour
             TobuPlaySwitch = 1;
             StopAllMusic();
             PlayRootsSouce.Play();
+            AllMusicPlay();
             TobuPlayTxt.text = "Stop";
         }else
         {
             TobuPlaySwitch = 0;
             PlayRootsSouce.Pause();
+            AllMusicPlay();
             TobuPlayTxt.text = "Play";
+        }
+    }
+
+    public void PlayFade()
+    {
+        if (FadePlaySwitch == 0)
+        {
+            FadePlaySwitch = 1;
+            StopAllMusic();
+            PlayFadeSource.Play();
+            AllMusicPlay();
+            FadePlayTxt.text = "Stop";
+        }else
+        {
+            FadePlaySwitch = 0;
+            StopAllMusic();
+            PlayFadeSource.Pause();
+            AllMusicPlay();
+            FadePlayTxt.text = "Play";
         }
     }
 
@@ -133,9 +162,19 @@ public class ShopScript : MonoBehaviour
 
     public void SelectFade()
     {
-        DeselectMusic();
-        WalkerFadeEnabled = 1;
-        FadeSelected.enabled = true;
+        if (hasFade == 0 && totalScore >= 5000)
+        {
+            hasFade = 1;
+            totalScore -= 5000;
+            UpdateText();
+            HasFadeTxt.text = "Select";
+        }
+        else if (hasFade == 1)
+        {
+            DeselectMusic();
+            WalkerFadeEnabled = 1;
+            FadeSelected.enabled = true;
+        }
     }
 
     public void SelectLight()
@@ -145,6 +184,14 @@ public class ShopScript : MonoBehaviour
         LightSelected.enabled = true;
     }
 
+    public void AllMusicPlay()
+    {
+        TobuPlayTxt.text = "Play";
+        TobuPlaySwitch = 0;
+        FadePlayTxt.text = "Play";
+        FadePlaySwitch = 0;
+    }
+
     public void DeselectMusic()
     {
         TobuRootsEnabled = 0;
@@ -152,7 +199,7 @@ public class ShopScript : MonoBehaviour
         WalkerSpectreEnabled = 0;
         ElectroLightEnabled = 0;
         RootsSelected.enabled = false;
-        //FadeSelected.enabled = false;
+        FadeSelected.enabled = false;
         //SpectreSelected.enabled = false;
         //LightSelected.enabled = false;
     }
@@ -163,6 +210,7 @@ public class ShopScript : MonoBehaviour
         WalkerSpectreEnabled = PlayerPrefs.GetFloat("SpectreEnabled");
         WalkerFadeEnabled = PlayerPrefs.GetFloat("FadeEnabled");
         ElectroLightEnabled = PlayerPrefs.GetFloat("LightEnabled");
+        hasFade = PlayerPrefs.GetFloat("HasFade");
     }
 
     public void SetMusicSaves()
@@ -171,5 +219,6 @@ public class ShopScript : MonoBehaviour
         PlayerPrefs.SetFloat("SpectreEnabled", WalkerSpectreEnabled);
         PlayerPrefs.SetFloat("FadeEnabled", WalkerFadeEnabled);
         PlayerPrefs.SetFloat("LightEnabled", ElectroLightEnabled);
+        PlayerPrefs.SetFloat("HasFade", hasFade);
     }
 }
