@@ -22,7 +22,9 @@ public class PlayerScript : MonoBehaviour {
     public MeshRenderer myRenderer;
     public Material red;
     public Material blue;
+    private AudioSource currentAudio;
     public AudioSource TobuRootsSource;
+    public AudioSource WalkerFadeSource;
     private static PlayerScript instance;
     public static PlayerScript Instance
     {
@@ -92,11 +94,18 @@ public class PlayerScript : MonoBehaviour {
 
     public void PlayMusic()
     {
-        TobuRootsSource.Play();
+        if(PlayerPrefs.GetFloat("RootsEnabled") == 1)
+        {
+            currentAudio = TobuRootsSource;
+        }else if(PlayerPrefs.GetFloat("FadeEnabled") == 1)
+        {
+            currentAudio = WalkerFadeSource;
+        }
+        currentAudio.Play();
     }
 
     public void PauseMusic()
     {
-        TobuRootsSource.Pause();
+        currentAudio.Pause();
     }
 }

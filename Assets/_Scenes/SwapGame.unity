@@ -289,6 +289,7 @@ MonoBehaviour:
   red: {fileID: 2100000, guid: f60ce8bbf30c0234b82fbc416a25d138, type: 2}
   blue: {fileID: 2100000, guid: 4abb4c4ae34853a42b8d9eccc1d6d534, type: 2}
   TobuRootsSource: {fileID: 1773992933}
+  WalkerFadeSource: {fileID: 1649357724}
 --- !u!23 &141523362
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2688,6 +2689,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1630313328}
+--- !u!82 &1649357724 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82501682154998944, guid: 168562c2853a2a44b837fd651a1d95cb,
+    type: 2}
+  m_PrefabInternal: {fileID: 2101987039}
 --- !u!1 &1688332992
 GameObject:
   m_ObjectHideFlags: 0
