@@ -221,4 +221,9 @@ public class ShopScript : MonoBehaviour
         PlayerPrefs.SetFloat("LightEnabled", ElectroLightEnabled);
         PlayerPrefs.SetFloat("HasFade", hasFade);
     }
+
+    public void FreePoints()
+    {
+        totalScore += 5000;
+    }
 }
