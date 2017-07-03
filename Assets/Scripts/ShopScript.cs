@@ -112,17 +112,17 @@ public class ShopScript : MonoBehaviour
     {
         if (TobuPlaySwitch == 0)
         {
+            AllMusicPlay();
             TobuPlaySwitch = 1;
             StopAllMusic();
             PlayRootsSouce.Play();
-            AllMusicPlay();
             TobuPlayTxt.text = "Stop";
         }else
         {
             TobuPlaySwitch = 0;
+            StopAllMusic();
             PlayRootsSouce.Pause();
             AllMusicPlay();
-            TobuPlayTxt.text = "Play";
         }
     }
 
@@ -130,10 +130,10 @@ public class ShopScript : MonoBehaviour
     {
         if (FadePlaySwitch == 0)
         {
+            AllMusicPlay();
             FadePlaySwitch = 1;
             StopAllMusic();
             PlayFadeSource.Play();
-            AllMusicPlay();
             FadePlayTxt.text = "Stop";
         }else
         {
@@ -141,7 +141,6 @@ public class ShopScript : MonoBehaviour
             StopAllMusic();
             PlayFadeSource.Pause();
             AllMusicPlay();
-            FadePlayTxt.text = "Play";
         }
     }
 
@@ -220,10 +219,5 @@ public class ShopScript : MonoBehaviour
         PlayerPrefs.SetFloat("FadeEnabled", WalkerFadeEnabled);
         PlayerPrefs.SetFloat("LightEnabled", ElectroLightEnabled);
         PlayerPrefs.SetFloat("HasFade", hasFade);
-    }
-
-    public void FreePoints()
-    {
-        totalScore += 5000;
     }
 }
