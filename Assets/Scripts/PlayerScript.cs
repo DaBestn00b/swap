@@ -26,6 +26,7 @@ public class PlayerScript : MonoBehaviour {
     public AudioSource TobuRootsSource;
     public AudioSource WalkerFadeSource;
     public AudioSource WalkerSpectreSource;
+    public AudioSource ElectroLightSource;
     private static PlayerScript instance;
     public static PlayerScript Instance
     {
@@ -104,6 +105,9 @@ public class PlayerScript : MonoBehaviour {
         }else if(PlayerPrefs.GetFloat("SpectreEnabled") == 1)
         {
             currentAudio = WalkerSpectreSource;
+        }else if(PlayerPrefs.GetFloat("LightEnabled") == 1)
+        {
+            currentAudio = ElectroLightSource;
         }
         currentAudio.Play();
     }

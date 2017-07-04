@@ -18,9 +18,11 @@ public class ShopScript : MonoBehaviour
     public Text LightSelected;
     public Text HasFadeTxt;
     public Text HasSpectreTxt;
+    public Text HasLightTxt;
     public Text TobuPlayTxt;
     public Text FadePlayTxt;
     public Text SpectrePlayTxt;
+    public Text LightPlayTxt;
     public AudioSource PlayRootsSouce;
     public AudioSource PlaySpectreSource;
     public AudioSource PlayFadeSource;
@@ -28,6 +30,7 @@ public class ShopScript : MonoBehaviour
     public float totalScore;
     private float hasFade;
     private float hasSpectre;
+    private float hasLight;
     private float TobuRootsEnabled;
     private float WalkerSpectreEnabled;
     private float WalkerFadeEnabled;
@@ -35,6 +38,7 @@ public class ShopScript : MonoBehaviour
     private int TobuPlaySwitch;
     private int FadePlaySwitch;
     private int SpectrePlaySwitch;
+    private int LightPlaySwitch;
 
     void Start()
     {
@@ -65,9 +69,9 @@ public class ShopScript : MonoBehaviour
         }else if(WalkerFadeEnabled == 1)
         {
             SelectFade();
-        }else
+        }else if(ElectroLightEnabled == 1)
         {
-
+            SelectLight();
         }
         UpdateText();
     }
@@ -170,6 +174,24 @@ public class ShopScript : MonoBehaviour
         }
     }
 
+    public void PlayLight()
+    {
+        if (LightPlaySwitch == 0)
+        {
+            AllMusicPlay();
+            LightPlaySwitch = 1;
+            StopAllMusic();
+            PlayLightSource.Play();
+            LightPlayTxt.text = "Stop";
+        }else
+        {
+            LightPlaySwitch = 0;
+            StopAllMusic();
+            PlayLightSource.Pause();
+            AllMusicPlay();
+        }
+    }
+
     public void StopAllMusic()
     {
         PlayRootsSouce.Stop();
@@ -213,9 +235,18 @@ public class ShopScript : MonoBehaviour
 
     public void SelectLight()
     {
-        DeselectMusic();
-        ElectroLightEnabled = 1;
-        LightSelected.enabled = true;
+        if (hasLight == 0 && totalScore >= 5000)
+        {
+            hasLight = 1;
+            totalScore -= 5000;
+            UpdateText();
+            HasLightTxt.text = "Select";
+        }else if (hasLight == 1)
+        {
+            DeselectMusic();
+            ElectroLightEnabled = 1;
+            LightSelected.enabled = true;
+        }
     }
 
     public void AllMusicPlay()
@@ -226,6 +257,8 @@ public class ShopScript : MonoBehaviour
         FadePlaySwitch = 0;
         SpectrePlayTxt.text = "Play";
         SpectrePlaySwitch = 0;
+        LightPlayTxt.text = "Play";
+        LightPlaySwitch = 0;
     }
 
     public void DeselectMusic()
@@ -237,7 +270,7 @@ public class ShopScript : MonoBehaviour
         RootsSelected.enabled = false;
         FadeSelected.enabled = false;
         SpectreSelected.enabled = false;
-        //LightSelected.enabled = false;
+        LightSelected.enabled = false;
     }
 
     public void SetMusicToSave()
@@ -248,6 +281,7 @@ public class ShopScript : MonoBehaviour
         ElectroLightEnabled = PlayerPrefs.GetFloat("LightEnabled");
         hasFade = PlayerPrefs.GetFloat("HasFade");
         hasSpectre = PlayerPrefs.GetFloat("HasSpectre");
+        hasLight = PlayerPrefs.GetFloat("HasLight");
     }
 
     public void SetMusicSaves()
@@ -258,5 +292,6 @@ public class ShopScript : MonoBehaviour
         PlayerPrefs.SetFloat("LightEnabled", ElectroLightEnabled);
         PlayerPrefs.SetFloat("HasFade", hasFade);
         PlayerPrefs.SetFloat("HasSpectre", hasSpectre);
+        PlayerPrefs.SetFloat("HasLight", hasLight);
     }
 }
