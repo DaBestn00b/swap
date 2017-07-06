@@ -59,6 +59,10 @@ public class ShopScript : MonoBehaviour
         { 
             HasSpectreTxt.text = "Select";
         }
+        if(hasLight == 1)
+        {
+            HasLightTxt.text = "Select";
+        }
         if(WalkerSpectreEnabled == 0 && WalkerFadeEnabled == 0 && ElectroLightEnabled == 0)
         {
             SelectTobu();
