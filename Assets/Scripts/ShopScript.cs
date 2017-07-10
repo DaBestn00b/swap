@@ -83,7 +83,9 @@ public class ShopScript : MonoBehaviour
     void Update()
     {
         SetMusicSaves();
+        PlayerPrefs.SetFloat("TotalScore", totalScore);
         UpdateText();
+        
     }
 
     public void UpdateText()

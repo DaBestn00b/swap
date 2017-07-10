@@ -14,6 +14,7 @@ public class PlayerScript : MonoBehaviour {
     public Text pointsTxt;
     public Text totalPointsTxt;
     public Text HighScoreTxt;
+    public Text totalPtsTxt;
     public Text NewHighScrTxt;
     public Text currentScore;
     public float points;
@@ -48,6 +49,7 @@ public class PlayerScript : MonoBehaviour {
         pauseMenu = pauseMenu.GetComponent<Canvas>();
         myRenderer = myRenderer.GetComponent<MeshRenderer>();
         pointsTxt = pointsTxt.GetComponent<Text>();
+        totalPtsTxt = totalPtsTxt.GetComponent<Text>();
         gameOver.enabled = false;
         pauseMenu.enabled = false;
         points = 0;
