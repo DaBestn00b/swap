@@ -15,6 +15,7 @@ Your score raises depending on how long you survive. The speed of your player al
 - Beautiful graphics and fonts
 - Great animations
 - Still being updated currently
+
 # About
 Developed by [Ebaad Imran](http://www.ebaad.ml) with [Cameron Samuels](http://cameronsamuels.com) as a mentor and marketer.
 ### Feedback
