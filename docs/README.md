@@ -23,7 +23,7 @@ Your score raises depending on how long you survive. The speed of your player al
 - Landscape mode is recommended
 
 # About
-Developed by [Ebaad Imran](http://ebaad.ml) with [Cameron Samuels](http://cameronsamuels.com) as a consultant and marketer.
+Developed by [Ebaad Imran](http://www.ebaad.ml) with [Cameron Samuels](http://cameronsamuels.com) as a consultant and marketer.
 
 ### Feedback
 If you want to help out, submit issues or suggestions at [https://git.io/vQ8Vt](https://git.io/vQ8Vt). I will gladly appreciate it.
