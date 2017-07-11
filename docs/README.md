@@ -11,19 +11,19 @@ Your score raises depending on how long you survive. The speed of your player al
 
 # Features
 - Endless fun
+- The shop for buying items like music and colors
+- Keeps track of highscores and points
+- Cross platform ([Android](https://goo.gl/uCTdch), [Amazon](https://goo.gl/oBAWGV), Windows, and more to come)
+- No internet required
 - Beautiful graphics and fonts
 - Great animations
-- Keeps track of highscores and points
-- Cross platform (Android, Amazon, and more to come)
-- No internet required
-- A soon to come store for buying items and upgrades
 - Still being updated currently
-
-# About
-App made by [Ebaad Imran](http://ebaad.ml). Marketing by [Cameron Samuels](http://cameronsamuels.com).
 
 ### Tips
 - Landscape mode is recommended
+
+# About
+Developed by [Ebaad Imran](http://ebaad.ml) with [Cameron Samuels](http://cameronsamuels.com) as a consultant and marketer.
 
 ### Feedback
 If you want to help out, submit issues or suggestions at [https://git.io/vQ8Vt](https://git.io/vQ8Vt). I will gladly appreciate it.
