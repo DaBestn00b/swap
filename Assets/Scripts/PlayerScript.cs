@@ -15,6 +15,7 @@ public class PlayerScript : MonoBehaviour
     public Text pointsTxt;
     public Text totalPointsTxt;
     public Text HighScoreTxt;
+    public Text TotalAmntOfPts;
     public Text NewHighScrTxt;
     public Text currentScore;
     public float points;

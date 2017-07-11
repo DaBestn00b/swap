@@ -40,6 +40,7 @@ public class BlueCollider : MonoBehaviour
                 PlayerScript.Instance.HighScoreTxt.text = "High Score: " + HighScore;
             }
             PlayerScript.Instance.totalPoints += PlayerScript.Instance.points;
+            PlayerScript.Instance.TotalAmntOfPts.text = "Total Points: " + PlayerScript.Instance.totalPoints;
             PlayerPrefs.SetFloat("TotalScore", PlayerScript.Instance.totalPoints);
         }
     }
