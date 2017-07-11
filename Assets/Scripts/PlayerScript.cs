@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerScript : MonoBehaviour {
+public class PlayerScript : MonoBehaviour
+{
 
     public float speed;
     public bool isBlue;
@@ -14,7 +15,6 @@ public class PlayerScript : MonoBehaviour {
     public Text pointsTxt;
     public Text totalPointsTxt;
     public Text HighScoreTxt;
-    public Text totalPtsTxt;
     public Text NewHighScrTxt;
     public Text currentScore;
     public float points;
@@ -33,7 +33,7 @@ public class PlayerScript : MonoBehaviour {
     {
         get
         {
-            if(instance == null)
+            if (instance == null)
             {
                 instance = GameObject.FindObjectOfType<PlayerScript>();
             }
@@ -41,7 +41,8 @@ public class PlayerScript : MonoBehaviour {
         }
     }
 
-	void Start () {
+    void Start()
+    {
         isBlue = true;
         dir = Vector3.zero;
         begin = begin.GetComponent<Canvas>();
@@ -49,19 +50,19 @@ public class PlayerScript : MonoBehaviour {
         pauseMenu = pauseMenu.GetComponent<Canvas>();
         myRenderer = myRenderer.GetComponent<MeshRenderer>();
         pointsTxt = pointsTxt.GetComponent<Text>();
-        totalPtsTxt = totalPtsTxt.GetComponent<Text>();
         gameOver.enabled = false;
         pauseMenu.enabled = false;
         points = 0;
-	}
+    }
 
-	void Update () {
-		if (Input.GetMouseButtonDown(0))
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
         {
             if (dir != Vector3.forward)
             {
                 dir = Vector3.forward;
-                if(begin.enabled == true)
+                if (begin.enabled == true)
                 {
                     PlayMusic();
                 }
@@ -70,19 +71,24 @@ public class PlayerScript : MonoBehaviour {
         }
         float amountToMove = speed * Time.deltaTime;
         transform.Translate(dir * amountToMove);
-	}
+    }
 
-    public void SwapColors () {
-        if (isBlue == true) {
+    public void SwapColors()
+    {
+        if (isBlue == true)
+        {
             isBlue = false;
             myRenderer.material = red;
-        }else {
+        }
+        else
+        {
             isBlue = true;
             myRenderer.material = blue;
         }
     }
 
-    public void PauseGame () {
+    public void PauseGame()
+    {
         PauseMusic();
         currentSpeed = speed;
         speed = 0;
@@ -90,7 +96,8 @@ public class PlayerScript : MonoBehaviour {
         currentScore.text = "Current Score: " + points;
     }
 
-    public void ResumeGame () {
+    public void ResumeGame()
+    {
         PlayMusic();
         speed = currentSpeed;
         pauseMenu.enabled = false;
@@ -98,16 +105,23 @@ public class PlayerScript : MonoBehaviour {
 
     public void PlayMusic()
     {
-        if(PlayerPrefs.GetFloat("RootsEnabled") == 1)
+        if(PlayerPrefs.GetFloat("FadeEnabled") == 0 && PlayerPrefs.GetFloat("SpectreEnabled") == 0 && PlayerPrefs.GetFloat("LightEnabled") == 0)
+        {
+            PlayerPrefs.SetFloat("RootsEnabled", 1);
+        }
+        if (PlayerPrefs.GetFloat("RootsEnabled") == 1)
         {
             currentAudio = TobuRootsSource;
-        }else if(PlayerPrefs.GetFloat("FadeEnabled") == 1)
+        }
+        else if (PlayerPrefs.GetFloat("FadeEnabled") == 1)
         {
             currentAudio = WalkerFadeSource;
-        }else if(PlayerPrefs.GetFloat("SpectreEnabled") == 1)
+        }
+        else if (PlayerPrefs.GetFloat("SpectreEnabled") == 1)
         {
             currentAudio = WalkerSpectreSource;
-        }else if(PlayerPrefs.GetFloat("LightEnabled") == 1)
+        }
+        else if (PlayerPrefs.GetFloat("LightEnabled") == 1)
         {
             currentAudio = ElectroLightSource;
         }

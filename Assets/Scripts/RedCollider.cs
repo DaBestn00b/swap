@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class RedCollider : MonoBehaviour {
 
     private float HighScore;
-    private float TotalAmntOfPts;
 
 	void Start () {
         HighScore = PlayerPrefs.GetFloat("HighScore");
@@ -38,8 +37,6 @@ public class RedCollider : MonoBehaviour {
                 PlayerScript.Instance.HighScoreTxt.text = "High Score: " + HighScore;
             }
             PlayerScript.Instance.totalPoints += PlayerScript.Instance.points;
-            TotalAmntOfPts = PlayerScript.Instance.totalPoints;
-            PlayerScript.Instance.totalPtsTxt.text = "Total Points: " + TotalAmntOfPts;
             PlayerPrefs.SetFloat("TotalScore", PlayerScript.Instance.totalPoints);
         }
     }

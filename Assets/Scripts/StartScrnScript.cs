@@ -11,12 +11,6 @@ public class StartScrnScript : MonoBehaviour {
     public Button quitText;
 
     void Start () {
-        if(PlayerPrefs.GetFloat("FirstTime") == 0)
-        {
-            PlayerPrefs.SetFloat("FirstTime", 1);
-            PlayerPrefs.SetFloat("TotalScore", 0);
-            PlayerPrefs.SetFloat("HighScore", 0);
-        }
         quitmenu = quitmenu.GetComponent<Canvas>();
         startText = startText.GetComponent<Button>();
         quitText = quitText.GetComponent<Button>();
