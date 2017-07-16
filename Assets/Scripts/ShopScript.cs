@@ -110,6 +110,8 @@ public class ShopScript : MonoBehaviour
         DisableEverything();
         ColorShop.enabled = true;
         Title.text = "Shop - Colors";
+        AllMusicPlay();
+        StopAllMusic();
     }
 
     public void DisableEverything()
