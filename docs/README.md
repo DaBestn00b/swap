@@ -8,6 +8,7 @@ Try to last as long as possible in the color changing world.
 # Links
 <a href="https://goo.gl/uCTdch" target="_blank">![Get it on Google Play](http://www.ebaad.ml/swap/img/android.svg)</a>
 <a href="https://goo.gl/oBAWGV" target="_blank">![Get it on the Amazon App Store](http://www.ebaad.ml/swap/img/amazon.svg)</a>
+<a href="https://ebaadimran.itch.io/swap-the-color-runner" target="_blank">![Get it for Windows on itch.io](http://svgur.com/i/2Zx.svg)</a>
 # Features
 - Endless fun
 - A shop for buying items like songs and colors with virtual currency
