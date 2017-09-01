@@ -6,22 +6,19 @@ Your points raise depending on how long you last. The speed of the ball will als
 
 Try to last as long as possible in the color changing world.
 # Links
-<a href="https://goo.gl/uCTdch" target="_blank">![Get it on Google Play](http://www.ebaad.ml/swap/img/android.svg)</a>
-<a href="https://goo.gl/oBAWGV" target="_blank">![Get it on the Amazon App Store](http://www.ebaad.ml/swap/img/amazon.svg)</a>
-<a href="https://ebaadimran.itch.io/swap-the-color-runner" target="_blank">![Get it for Windows on itch.io](http://svgur.com/i/2Zx.svg)</a>
+<a href="https://goo.gl/uCTdch" target="_blank">![Get it on Google Play](http://ebaad.ml/swap/img/android.svg)</a>
+<a href="https://goo.gl/oBAWGV" target="_blank">![Get it on the Amazon App Store](http://ebaad.ml/swap/img/amazon.svg)</a>
+<a href="https://goo.gl/DJGAjp" target="_blank">![Get it for Windows on itch.io](http://svgur.com/i/2Zx.svg)</a>
 # Features
-- Endless fun
-- A shop for buying items like songs and colors with virtual currency
-- Keeps track of highscores and points
-- Cross platform on [Android](https://goo.gl/uCTdch), [Amazon](https://goo.gl/oBAWGV), Windows ([itch.io](https://ebaadimran.itch.io/swap-the-color-runner)), online ([Kongregate](http://kongregate.com/games/EbaadImran/swap-the-color-runner)), and more to come
+- Endless gameplay
+- Buy in-game items with virtual currency
+- Keep track of highscores
+- Available on [Android](https://goo.gl/uCTdch), [Amazon](https://goo.gl/oBAWGV), Windows ([itch.io](https://goo.gl/DJGAjp)), online ([Kongregate](https://goo.gl/Lu7w4N)), and more to come
+- Astonishing visual graphics and animations
 - No internet required
-- Beautiful graphics and fonts
-- Great animations
-- Still being updated currently
+# Contributing
+Please [open issues](https://git.io/vQ8Vt) for any bug reports or suggestions.
 
+You may fork [this repo](https://git.io/vQRGX) and create pull requests. I love your help.
 # About
-Developed by [Ebaad Imran](http://www.ebaad.ml) with [Cameron Samuels](http://cameronsamuels.com).
-### Feedback
-Submit issues or suggestions at [https://git.io/vQ8Vt](https://git.io/vQ8Vt). I gladly appreciate it.
-### Contributing
-Also, if you code, you may fork my repo at [https://git.io/vQRGX](https://git.io/vQRGX). I will love for pull requests.
+Developed by [Ebaad Imran](http://ebaad.ml), and consulted by [Cameron Samuels](https://cameronsamuels.com).
