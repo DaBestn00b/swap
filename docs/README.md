@@ -1,8 +1,8 @@
 Swap! is an endless runner where you "swap" colors to match the platform.
 # Objective
-The goal of the game is to travel the farthest without losing. A ball rolls on a platform automatically, and you lose when the ball becomes the opposite color of the ground. To change to the right color, you must click the "Swap!" button.
+A ball rolls on a platform until it's the opposite color of the ground. The goal of the game is to travel the farthest without stopping. To change to the correct color, click the "Swap!" button.
 
-Your points raise depending on how long you last. The speed of the ball will also increase over time. The more points you gain, the more items in the store you can buy.
+Points increase depending on how far the ball travels. The speed of the ball will also increase over time. Buy items like songs and colors in the shop using points.
 
 Try to last as long as possible in the color changing world.
 # Links
