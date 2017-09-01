@@ -16,6 +16,7 @@ Try to last as long as possible in the color changing world.
 - Available on [Android](https://goo.gl/uCTdch), [Amazon](https://goo.gl/oBAWGV), Windows ([itch.io](https://goo.gl/DJGAjp)), online ([Kongregate](https://goo.gl/Lu7w4N)), and more to come
 - Astonishing visual graphics and animations
 - No internet required
+
 # Contributing
 Please [open issues](https://git.io/vQ8Vt) for any bug reports or suggestions.
 
