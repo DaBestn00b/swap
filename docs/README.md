@@ -22,4 +22,4 @@ Please [open issues](https://git.io/vQ8Vt) for any bug reports or suggestions.
 
 You may fork [this repo](https://git.io/vQRGX) and create pull requests. I love your help.
 # About
-Developed by [Ebaad Imran](http://ebaad.ml), and consulted by [Cameron Samuels](https://cameronsamuels.com).
+Developed by [Ebaad Imran](http://ebaad.ml).
